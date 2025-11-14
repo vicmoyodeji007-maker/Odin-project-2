@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Odin project</title>
+  <script type="text/javascript" src="darkmodde.js" defer></script>
+ </head>
+<body>
+  <header id="header">
+    <nav id="nav-bar">
+   <div class="logo-container">
+    <img id="header-img" src="data:image/png;base64,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" alt="Odin Project Logo">
+ <div class="logo-text">
+    <span class="heading">THE ODIN PROJECT</span>
+  </div>
+  </div>  
+  <a href="https://www.theodinproject.com/sign_up" <button id="get-started-btn">Get Started</button></a>
+  <button id="theme-switch">
+    <img src="./light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="Light Mode Icon" class="light-mode-icon">
+    <img src="./dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="Dark Mode Icon" class="dark-mode-icon">
+  </button> 
+
+     <ul>
+    <a href="https://discord.com/invite/fbFCkYabZB" class="nav-links">Commmunity</a>
+  <a href="https://www.theodinproject.com/support_us" class="nav-links">Support Us</a>
+   <a href="https://www.theodinproject.com/sign_in" class="nav-links">Sign in</a>
+       <a href="https://www.theodinproject.com/about" class="nav-links">About</a>
+         <a href="https://www.theodinproject.com/paths" class="nav-links">All Paths</a>
+  </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero-section">
+      <div class="hero-content">
+        <h1>Your <span class="text">Career in Web Development</span>
+        <br>
+         Starts Here</h1>
+        <p class="word">Our full stack curriculum is free and supported by a passionate open source community.</p>
+        <button id="start-learning-btn">Veiw Full Curriculum</button>
+
+      <div class="hero-image">
+        <img src="https://www.theodinproject.com/assets/home-isometric-5dd4786e.svg" alt="Hero-image" id="Hero-image">
+      </div> 
+      <div class="how-it-works">
+        <h3>How It Works</h3>
+        <p >This is the website we wish we had when we were learning on our own. We scour the internet looking for only the best resources to supplement your learning and present them in a logical order.</p>
+       </div>
+       <div id="community-container">
+       <div>
+        <img src="https://www.theodinproject.com/assets/img-learn-0a725ad1.svg" alt="Community Image" id="community-image">
+      <p>Learn</p>
+      <p class="info">Learn from a curriculum with the best curated online tutorials, blogs, and courses.</p>
+       </div>
+      <div>
+      <img src="https://www.theodinproject.com/assets/img-build-a02a424b.svg" alt="Community Image" id="community-image">
+      <p>Build</p>
+      <p class="info">Build dozens of portfolio-worthy projects along the way, from simple scripts to full programs and deployed websites.</p>
+    </div>
+    <div>
+      <img src="https://www.theodinproject.com/assets/img-connect-866e9700.svg" alt="Community Image" id="community-image">
+      <p>Connect</p>
+      <p class="info">You're not alone. Learn and get help from our friendly community of beginner and experienced developers.</p>  
+         </div>
+    </section>
+    <section id="curriculum-section"> 
+      <h3 class="curriculum-heading">Learn everything you need to know</h3>
+      <div class="curriculum-section">
+      <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css" class="project-tile">
+        <img src="https://www.theodinproject.com/assets/badge-html-css-4d74ba92.svg" alt="" widht="1" height="120">
+        <p>Intermediate HTML and CSS</p>
+      </a> 
+      <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/advanced-html-and-css" class="project-tile">
+        <img src="https://www.theodinproject.com/assets/badge-html-css-4d74ba92.svg" alt="" widht="1" height="120">
+        <p>Advance HTML and CSS</p>
+      </a> 
+      <a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/databases" class="project-tile">
+        <img src="https://www.theodinproject.com/assets/badge-database-3757c431.svg" alt="" widht="1" height="120">
+        <p>Databases</p>
+      </a> 
+      <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript" class="project-tile">
+        <img src="https://www.theodinproject.com/assets/badge-javascript-43bfdf7b.svg" alt="" widht="1" height="120">
+        <p>JavaScript</p>
+      </a> 
+      <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/react" class="project-tile">
+        <img src="https://www.theodinproject.com/assets/badge-react-21ede6f9.svg" alt="" widht="1" height="120">
+        <p>React</p>
+      </a> 
+      <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs" class="project-tile">
+        <img src="https://www.theodinproject.com/assets/badge-nodejs-b8154f54.svg" alt="" widht="1" height="120">
+        <p>NodeJS</p>
+      </a> 
+      <a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails" class="project-tile">
+        <img src="https://www.theodinproject.com/assets/badge-ruby-on-rails-e5f98949.svg" alt="" widht="1" height="120">
+        <p>Ruby on Rails</p>
+      </a> 
+      <a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby" class="project-tile">
+        <img src="https://www.theodinproject.com/assets/badge-ruby-2e00add1.svg" alt="" widht="1" height="120">
+        <p>Ruby</p>
+      </a> 
+      <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/getting-hired" class="project-tile">
+        <img src="https://www.theodinproject.com/assets/badge-getting-hired-87e39081.svg" alt="" widht="1" height="120">
+        <p>Getting Hired</p>
+      </a> 
+    </div>
+    <button id="Explore-curriculum-btn">Explore Curriculum</button>
+   
+  </section> 
+    <section>
+      <h4>Success Stories</h4>
+      <div class="success-story">
+        <div class="story-card">
+          <img src="https://www.theodinproject.com/assets/success_stories/rob_pando-2afd55e8.jpg" alt="Rob Pando" class="story-avatar">
+         <a href="https://github.com/RobPando" <p class="story-name">Rob Pando</p></a>
+          <p class="story-text">TOP was a perfect match for my learning style. Not walking me through an entire project but actually forcing me to figure it out on my own, by pointing me...</p>
+        </div>
+        <div class="story-card">
+          <img src="https://www.theodinproject.com/assets/success_stories/cody_loyd-fb0721ea.jpg" alt="Cody Loyd" class="story-avatar">
+         <a href="https://codyloyd.com/" <p class="story-name">Cody Loyd</p></a>
+          <p class="story-text">Before I started the Odin Project I had literally ZERO programming experience. After almost exactly a year of working through the program, I was offered a job as a front...</p>
+        </div>
+        <div class="story-card">
+          <img src="https://www.theodinproject.com/assets/success_stories/andrej_dragojevic-a1bd5d98.jpg" alt="Adrej Dragojevic" class="story-avatar">
+         <a href="" <p class="story-name">Andrej Dragojevic</p></a>
+          <p class="story-text"> An incredible self-paced curriculum that consists of the best resources for learning programming on the web! It was an invaluable resource on my path to a becoming a software developer.
+
+            ...
+            
+            </p>
+        </div>
+        <div class="story-card">
+          <img src="https://www.theodinproject.com/assets/success_stories/skip-7f368b69.jpg" alt="Skip Gibson" class="story-avatar">
+         <a href="" <p class="story-name">Skip Gibson</p></a>
+          <p class="story-text">Before I found The Odin Project I had very little direction with my learning, jumping from topic to topic then trying to piece things together as I went.
+
+            Having this...</p>
+        </div>
+      
+      <a href="https://www.theodinproject.com/success_stories" class="read">Read more success stories</a>
+      </div>
+   <div class="support">
+    <h3>Support Us!</h3>
+    <p>The Odin Project is funded by the community. Join us in empowering learners around the globe by supporting The Odin Project!</p>
+ <div class="button-container" >
+    <a href="https://www.theodinproject.com/support_us"> 
+  <button id="support-us-btn">Learn more</button>
+ <a href="https://opencollective.com/theodinproject/donate?interval=oneTime&amount=5&name=&legalName=&email=">
+  <button id="donate-btn">Donate now <span class="arrow">→</span></button>
+</a> </div></div>
+</div>
+  </div>
+
+     </div>
+    </section>
+    <section>
+      <footer class="footer">
+<div class="footer-logo">
+        <img id="header-img" src="data:image/png;base64,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" alt="Odin Project Logo">
+        <span class="heading">THE ODIN PROJECT</span>           
+      <p>High quality coding education maintained by an open source community.</p> 
+  <div class="social-media">
+    <a href="https://github.com/TheOdinProject" class="social-media-github">
+      <svg xmlns="http://www.w3.org/2000/svg" height="30"viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"></path></svg>
+    </a>
+    <a href="https://discord.com/invite/fbFCkYabZB" class="social-media-descord">
+      <svg xmlns="http://www.w3.org/2000/svg"  height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M19.3034 5.33716C17.9344 4.71103 16.4805 4.2547 14.9629 4C14.7719 4.32899 14.5596 4.77471 14.411 5.12492C12.7969 4.89144 11.1944 4.89144 9.60255 5.12492C9.45397 4.77471 9.2311 4.32899 9.05068 4C7.52251 4.2547 6.06861 4.71103 4.70915 5.33716C1.96053 9.39111 1.21766 13.3495 1.5891 17.2549C3.41443 18.5815 5.17612 19.388 6.90701 19.9187C7.33151 19.3456 7.71356 18.73 8.04255 18.0827C7.41641 17.8492 6.82211 17.5627 6.24904 17.2231C6.39762 17.117 6.5462 17.0003 6.68416 16.8835C10.1438 18.4648 13.8911 18.4648 17.3082 16.8835C17.4568 17.0003 17.5948 17.117 17.7434 17.2231C17.1703 17.5627 16.576 17.8492 15.9499 18.0827C16.2789 18.73 16.6609 19.3456 17.0854 19.9187C18.8152 19.388 20.5875 18.5815 22.4033 17.2549C22.8596 12.7341 21.6806 8.80747 19.3034 5.33716ZM8.5201 14.8459C7.48007 14.8459 6.63107 13.9014 6.63107 12.7447C6.63107 11.5879 7.45884 10.6434 8.5201 10.6434C9.57071 10.6434 10.4303 11.5879 10.4091 12.7447C10.4091 13.9014 9.57071 14.8459 8.5201 14.8459ZM15.4936 14.8459C14.4535 14.8459 13.6034 13.9014 13.6034 12.7447C13.6034 11.5879 14.4323 10.6434 15.4936 10.6434C16.5442 10.6434 17.4038 11.5879 17.3825 12.7447C17.3825 13.9014 16.5548 14.8459 15.4936 14.8459Z"></path></svg>
+    </a>
+    <a href="https://web.facebook.com/theodinproject/?_rdc=1&_rdr#" class="social-media-fb">
+      <svg xmlns="http://www.w3.org/2000/svg"  height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 16.9913 5.65783 21.1283 10.4385 21.8785V14.8906H7.89941V12H10.4385V9.79688C10.4385 7.29063 11.9314 5.90625 14.2156 5.90625C15.3097 5.90625 16.4541 6.10156 16.4541 6.10156V8.5625H15.1931C13.9509 8.5625 13.5635 9.33334 13.5635 10.1242V12H16.3369L15.8936 14.8906H13.5635V21.8785C18.3441 21.1283 22.001 16.9913 22.001 12C22.001 6.47715 17.5238 2 12.001 2Z"></path></svg>
+    </a>
+    <a href="https://x.com/TheOdinProject" class="social-media-x">
+      <svg xmlns="http://www.w3.org/2000/svg"  height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M10.4883 14.651L15.25 21H22.25L14.3917 10.5223L20.9308 3H18.2808L13.1643 8.88578L8.75 3H1.75L9.26086 13.0145L2.31915 21H4.96917L10.4883 14.651ZM16.25 19L5.75 5H7.75L18.25 19H16.25Z"></path></svg>
+    </a>
+  </div>
+  </div>
+   <div class="footer-links">
+    <div>
+    <h5>About</h5>
+    <ul>
+    <li><a href="https://www.theodinproject.com/about" class="about">About us</a></li>
+    <li><a href="https://www.theodinproject.com/team" class="about">Team</a></li>
+    <li><a href="https://dev.to/theodinproject" class="about">Blog</a></li>
+    <li><a href="https://www.theodinproject.com/success_stories" class="about">Success stories</a></li>
+    </ul>
+  </div>
+    <div>
+    <h5>Support</h5>
+    <ul>
+    <li><a href="https://www.theodinproject.com/faq" class="about">FAQ</a></li>
+    <li><a href="https://www.theodinproject.com/contributing" class="about">Contribute</a></li>
+    <li><a href="https://www.theodinproject.com/about#contact-us" class="about">Contact us</a></li>
+    </ul>
+  </div>
+ <div>
+  <h5>Guides</h5>
+  <ul>
+  <li><a href="https://www.theodinproject.com/guides/community" class="about">Community guides</a></li>
+  <li><a href="https://www.theodinproject.com/guides/installations" class="about">Installation guides</a></li>
+  </ul>
+   </div>
+   <div>
+    <h5>Legal</h5>
+    <ul>
+  <li><a href="https://www.theodinproject.com/terms_of_use" class="about">Terms</a></li>
+  <li><a href="https://www.theodinproject.com/privacy-policy" class="about">Privacy</a></li>
+   </ul>
+  </div>
+</div></footer> 
+ <div class="icon">
+  <p>© 2025 The Odin Project. All rights reserved.</p>
+ </div>
+
+    </section>    
+  </main>
+</body>
+</html> 
